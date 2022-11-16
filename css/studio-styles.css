@@ -1,0 +1,631 @@
+/*---------GENERAL STYLES-------------------------*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    transition: all .2s ease-in-out;
+}
+
+body{
+    background-color: #eeebe6;
+}
+
+h1{
+    font-size: 5rem;
+    color: #333;
+}
+
+h2{
+    font-size: 3.5rem;
+    font-family: 'Sorts Mill Goudy', serif;
+    color: #333;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+h3{
+    font-size: 1.2rem;
+    color: #333;
+    font-family: 'Arsenal', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p{
+    color: #333;
+    font-size: 0.95rem;
+    font-family:'Sorts Mill Goudy', serif ;
+    line-height: 2;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding: 20vh 0vw;
+    justify-content: space-between;
+}
+
+.section-img{
+    margin: 0px 5vw;
+    flex-grow: 1;
+}
+
+.section-text{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-img img{
+    display: block;
+    max-width: 30vw;
+    height: auto;
+} 
+
+@media screen and (max-width: 1000px) {
+
+    section{
+        padding: 10vh 0vw;
+        width: 90%;
+    }
+    
+    
+}
+
+@media screen and (max-width: 800px) {
+    
+    h2{
+        margin-bottom: 10px;
+        font-size: 2.3rem;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+
+    section{
+        
+        padding: 10vh 0vw;
+        width: 95vw;
+    }
+    .section-img img{
+        max-width: 80%;
+        margin: auto;
+        
+    }
+
+    .section .top{
+        margin-bottom: 5vh;
+    }
+
+    .section-text{
+        margin: auto 10vw;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    section{
+        flex-direction: column;
+    }
+    
+}
+
+/*HEADER*/
+
+header{
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+}
+
+header figure{
+    padding: 5vh 0vh;
+}
+
+
+figure img{
+    display: block;
+    width:25%;
+    height: auto;
+    margin: auto;
+}
+
+header nav{
+    height: 5vh;
+    text-align: center;
+
+}
+
+
+header nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 400;
+    color: white;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+header nav ul li a:hover{
+    letter-spacing: 2px;
+    color: rgb(255, 167, 72)
+}
+
+@media screen and (max-width:850px) {
+
+    header{
+        background-position: center; 
+        background-size: cover;
+        height: 80vh;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    figure img{
+        display: block;
+        width:50%;
+        height: auto;
+        margin-left: 5vw;
+    }
+    
+}
+
+/*-----------------------END OF HEADER---------------------------------*/
+
+/*-------------------------SIDE MENU------------------------------------*/
+svg{
+    position: absolute;
+    top: 5vh;
+    right: 10vw;
+}
+
+span a{
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+
+}
+
+#side-menu{
+    height: 100vh;
+    width: 0%;
+    background-color: rgba(255, 167, 72, 0.95);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index:1000;
+    overflow: hidden;
+    text-align: center;
+
+    
+    padding: 15vh 0px;
+    
+}
+
+.btn-close {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+   
+}
+
+
+#side-menu ul{
+    margin-top: 10vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40vh;
+}
+
+#side-menu ul li{
+    display: block;
+    width: 100%;
+    text-align: center;
+
+}
+
+#side-menu ul li a {
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1000px) {
+
+    header #desktop-nav{
+        display: none;
+    }
+
+}
+
+
+@media screen and (min-width:1000px){
+    .open-slide{
+        display: none;
+    }
+}
+
+
+/* DESCRIPTION*/
+
+
+
+
+/*PRODUCTS*/
+
+
+.products-images{
+    display: flex;
+    /*width: 100vw;*/
+}
+
+.product-div{
+    
+    flex-grow: 1;
+    flex-basis: 33%;
+
+}
+
+.product-div img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.products-nav{
+    height: 20vh;
+    background-color: #f97636;
+}
+
+.products-nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    
+}
+
+.products-nav ul li{
+    flex-grow: 1;
+    text-align: center;
+    list-style: none;
+    
+    
+}
+
+.products-nav ul li a{
+    color: whitesmoke;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+@media screen and (max-width:1000px) {
+
+    .products-nav ul li a {
+        font-size: 1.6rem;
+    }
+    
+}
+
+@media screen and (max-width:480px) /*MOBILE PRODUCT NAV*/ {
+    
+    .products-nav{
+        height: auto;
+        padding: 3vh 0px;
+    }    
+    .products-nav ul{
+        flex-direction: column;
+    }
+
+    .products-nav ul li{
+        flex-grow: 0;
+    }
+
+}
+
+/* ABOUT US */
+
+.button{
+    border: 2px solid #f97636;
+    padding: 15px;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 500;
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: fit-content;
+    margin: 5vh auto;
+}
+
+
+/* QUOTE */
+
+section.quote{
+    padding: 0px;
+    background-color: #3c4049;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quote p{
+    width: 50%;
+    margin: 0px auto;
+    font-size: 2.2rem;
+    font-family: 'Sorts Mill Goudy', serif;
+    line-height: 1.2;
+    color:#eeebe6
+}
+
+@media screen and (max-width:800px) {
+    .quote p{
+        font-size: 1.5rem;
+        width: 70%;
+    }
+}
+
+
+/*FEATURED*/
+
+.featured{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0%;
+}
+
+.featured-bg{
+    flex: 1 30%;
+    height: 100vh;
+    background-image: url(../images/alex-simpson-1-vPgR_pSD4-unsplash.jpg);
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+
+.featured-content{
+    display: flex;
+    flex: 2 70%;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px auto;
+    padding-top: 10vh;
+}
+
+.featured-flex{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0px auto;
+}
+
+
+
+.featured-info{
+    flex-basis: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feat-right{
+    margin-left: 5vw;
+}
+
+.feat-right h3{
+    text-align: left;
+}
+
+.featured-info p {
+
+    text-align: left;
+    line-height: 1.5;
+    padding-right: 10%;
+
+}
+
+.featured-info .p-2{
+    text-align: right;
+    padding-left: 10%;
+    padding-right: 0px;
+}
+
+.featured-images{
+    display: block;
+    max-width: 15vw;
+    height: auto;
+    flex-basis: 1;
+}
+
+.featured-images img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0px;
+}
+
+.featured-info a{
+    font-family: 'Sorts Mill Goudy', serif;
+    margin-top: 5%;
+    color: #333;
+
+
+}
+
+@media screen and (max-width:1200px) {
+    
+    .featured{
+
+        height: 70vh;
+
+    }
+
+    .featured-flex{
+        width: 80%;
+    }
+
+    .featured-bg{
+        flex: 1 20%;
+    }
+
+    .featured-content{
+        flex: 2 80%;
+        
+    }
+    
+   .flex-2{
+        margin-top: 15%;
+    }
+
+
+    
+}
+
+@media screen and (max-width:480px) {
+    .featured{
+        height: 900px;
+    }
+
+    .featured-flex{
+        width: 85vw;
+        margin-top: 5vh;
+    }
+
+    .featured-images{
+        max-width: 30vw;
+        /*max-height: 30vw;*/
+       
+    }
+
+    .featured-info{
+        
+        flex-basis: 1;
+    }
+
+    .feat-right{
+        margin-left: 6vw;
+    }
+
+    .featured-info p{
+        
+        line-height: 1.2;
+    }
+
+    .featured-info .p-2 {
+        padding-left: 5%;
+    }
+
+
+
+
+}
+
+
+/*-------------FOOTER------------------*/
+
+footer{
+    height: 50vh;
+    background-color: #3c4049;
+    padding-top: 10vh;
+
+}
+
+footer figure{
+    width: 80%;
+    margin: auto;
+}
+
+footer figure img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.nav-footer{
+    text-align: center;
+    margin: 5vh 0px;
+}
+.nav-footer ul{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.nav-footer ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0% 8px;
+
+}
+
+.nav-footer ul li a{
+    color: #eeebe6;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: 100;
+    font-size: 1rem;
+    padding-bottom: 1px;
+}
+
+footer h5{
+    color: #eeebe6;
+    font-size: 0.7rem;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+@media screen and (max-width:1000px) {
+    footer figure img{
+
+        text-align: center;
+        margin: 0px auto;
+
+    }
+    
+}
+
+@media screen and (max-width:480px) {
+
+   
+
+    .nav-footer ul li{
+        margin-bottom: 10px;
+    }
+    
+    .nav-footer ul li a{
+        font-size: 0.9rem;
+    }
+
+    footer h5{
+        width: 80%;
+        margin: auto;
+    }
+}
