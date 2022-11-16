@@ -1,0 +1,210 @@
+<!--https://sophie-template-fe.squarespace.com/?password=demo THIS IS THE TEMPLATE IM RECREAATING-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Flexbox practice</title>
+        
+        <meta charset="utf-8">
+        <meta name="description" content="practice">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/studio-styles.css" type="text/css">
+
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/urw-classico" type="text/css"/>
+        
+
+        
+
+    </head>
+
+    <body>
+        <header>
+
+            <figure>
+                <img src="images/photo-logo.svg" alt="logo">            
+            </figure>
+
+            <span class="open-slide">
+                <a href="#" onclick="openSideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="3"/>
+
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="3"/>
+
+                        <path d="M0,23 30,23" stroke="#fff" stroke-width="3"/>
+
+                    </svg>
+                </a>
+
+            </span>
+
+            <nav id="desktop-nav">
+
+                
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">Journal</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <nav id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">Journal</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            </nav>
+
+        </header>
+
+        <section class="section description">
+            <div class="section-img desc-img top">
+                <img src="images/skeleton.jpg" alt="pumpkin">
+            </div>
+
+            <div class="section-text desc-text">
+                <h2>Welcome.</h2>
+                <h3>ADD A SUBHEADING HERE</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut accumsan dui. Aliquam ligula ante, imperdiet vitae hendrerit sit amet, elementum et diam. Curabitur vel accumsan arcu. Proin mi est, scelerisque a scelerisque vitae. </p>
+            </div>
+        </section>
+
+        <div class="products">
+            <div class="products-images">
+                <div class="product-div"><img src="images/halloween.jpg" alt=""></div>
+                <div class="product-div"><img src="images/carrousel-2.jpg" alt=""></div>
+                <div class="product-div"><img src="images/carrousel-3.jpg" alt=""></div>
+            </div>
+
+            <nav class="products-nav">
+                <ul>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">View Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section class="section about-us">
+            <div class="section-text abt-text top">
+                <h2>Hey there!</h2>
+                <h3>ADD A SUBHEADING HERE</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut accumsan dui. Aliquam ligula ante, imperdiet vitae hendrerit sit amet, elementum et diam. Curabitur vel accumsan arcu. Proin mi est, scelerisque a scelerisque vitae.</p>
+                
+                <h6 class="button"> More about us</h6>
+            </div>
+
+            <div class="section-img abt-img">
+                <img src="images/hey-there.jpg">
+            </div>
+            
+
+        </section>
+
+        <section class="quote">
+            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi est magna, maximus ac tincidunt in, volutpat vel libero. Donec euismod mollis tortor vel mollis. Aliquam erat volutpat.”</p>
+        </section>
+
+        <section class="section featured">
+            <div class="featured-bg"></div>
+            <div class="featured-content">
+                <h2>Featured Posts</h2>
+                <div class="featured-flex">
+
+                    <figure class="featured-images">
+                        <img src="images/featured-1-1.jpg" alt="muertos" >
+                    </figure>
+
+                    <article class="featured-info feat-right">
+                        <h3>Blog Post title 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque vel leo eu maximus. Vivamus porta malesuada neque eu aliquet. Lorem ipsum dolor sit amet.</p>
+                        <a href="#" class="read-more-button"> Read More</a>
+                    </article>
+
+                </div>
+
+                <div class="featured-flex flex-2">
+                    
+                    <article class="featured-info">
+                        <h3 class="p-2">Blog Post title 2</h3>
+                        <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque vel leo eu maximus. Vivamus porta malesuada neque eu aliquet. Lorem ipsum dolor sit amet.</p>
+                        <a href="#" class="read-more-button p-2">Read More</a>
+                    </article>
+
+                    <figure class="featured-images feat-right">
+                        <img src="images/featured-2-1.jpg" alt="muertos">
+                    </figure>
+
+                </div>
+
+                
+            </div>
+        </section>
+
+
+
+        <footer>
+            <figure>
+                <img src="images/photo-logo.svg" alt="logo">
+            </figure>
+
+            <nav class="nav-footer">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">Journal</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <h5> &copy;Photsyntesis | Template by Big Cat Creative <br>The featured typeface is Digestive from @ohnotypeco. I love it more than my own family.</h5>
+        </footer>
+
+        <script>
+
+            //Open the side menu
+
+        function openSideMenu(){
+
+            document.getElementById('side-menu').style.width = '100%';
+
+            
+
+        }
+
+
+
+        //Close the side menu
+
+        function closeSideMenu(){
+
+            document.getElementById('side-menu').style.width = '0px';
+
+           
+
+        }
+
+        </script>
+
+
+
+
+
+
+    </body>
+</html>
